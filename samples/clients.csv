@@ -1,0 +1,10 @@
+ClientID,ClientName,PriorityLevel,RequestedTaskIDs,GroupTag,AttributesJSON
+C001,Acme Corp,5,"T001,T002,T003",Enterprise,"{""budget"": 100000, ""deadline"": ""2024-12-31""}"
+C002,Beta Solutions,3,"T002,T004",SMB,"{""budget"": 50000, ""deadline"": ""2024-11-30""}"
+C003,Gamma Industries,4,"T001,T005",Enterprise,"{""budget"": 75000, ""deadline"": ""2024-10-15""}"
+C004,Delta Tech,2,"T003,T006",Startup,"{""budget"": 25000, ""deadline"": ""2025-01-15""}"
+C005,Epsilon LLC,5,"T004,T007,T008",Enterprise,"{""budget"": 120000, ""deadline"": ""2024-09-30""}"
+C006,Zeta Innovations,1,"T006",Startup,"{""budget"": 15000, ""deadline"": ""2025-02-28""}"
+C007,Eta Enterprises,3,"T005,T009",SMB,"{""budget"": 60000, ""deadline"": ""2024-12-15""}"
+C008,Theta Corp,4,"T007,T010",Enterprise,"{""budget"": 90000, ""deadline"": ""2024-11-01""}"
+

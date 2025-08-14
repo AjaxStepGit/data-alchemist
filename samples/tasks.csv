@@ -1,0 +1,12 @@
+TaskID,TaskName,Category,Duration,RequiredSkills,PreferredPhases,MaxConcurrent
+T001,Web Application Development,Development,3,"JavaScript,React,Node.js","[1,2,3]",2
+T002,Database Design,Development,2,"SQL,Database Design","[1,2]",1
+T003,Machine Learning Model,DataScience,4,"Python,Machine Learning,TensorFlow","[2,3,4,5]",1
+T004,Mobile App Development,Development,3,"React Native,JavaScript","[1,3,4]",2
+T005,Data Analysis Report,DataScience,2,"Python,Data Analysis,Pandas","[2,4]",3
+T006,UI/UX Design,Design,2,"UI/UX,Figma","[1,2]",2
+T007,Cloud Infrastructure Setup,Infrastructure,3,"AWS,Docker,Kubernetes","[1,2,3]",1
+T008,Quality Assurance Testing,QA,2,"Testing,Selenium","[3,4,5]",2
+T009,Project Management,Management,5,"Project Management,Agile","[1,2,3,4,5]",1
+T010,Sales Strategy Development,Business,2,"Sales,Business Development","[1,2]",2
+

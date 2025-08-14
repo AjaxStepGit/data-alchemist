@@ -1,0 +1,12 @@
+WorkerID,WorkerName,Skills,AvailableSlots,MaxLoadPerPhase,WorkerGroup,QualificationLevel
+W001,Alice Johnson,"Python,JavaScript,React","[1,2,3,4,5]",3,Engineering,Senior
+W002,Bob Smith,"Java,Spring,SQL","[1,3,5]",2,Engineering,Mid
+W003,Carol Davis,"Python,Machine Learning,Data Analysis","[2,4,6]",4,DataScience,Senior
+W004,David Wilson,"JavaScript,Node.js,MongoDB","[1,2,4,5]",3,Engineering,Mid
+W005,Eva Brown,"Project Management,Agile,Scrum","[1,2,3,4,5,6]",5,Management,Senior
+W006,Frank Miller,"UI/UX,Figma,Adobe Creative","[2,3,4]",2,Design,Mid
+W007,Grace Lee,"Python,TensorFlow,PyTorch","[1,3,4,6]",3,DataScience,Senior
+W008,Henry Taylor,"DevOps,AWS,Docker,Kubernetes","[1,2,3,5,6]",4,Infrastructure,Senior
+W009,Ivy Chen,"QA,Testing,Selenium,Cypress","[2,3,4,5]",3,QA,Mid
+W010,Jack Anderson,"Sales,Business Development,CRM","[1,2,3,4,5]",2,Sales,Junior
+
