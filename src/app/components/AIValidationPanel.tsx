@@ -155,7 +155,7 @@ export default function AIValidationPanel({ data, entityType, validationErrors }
               {corrections.corrections.map((correction: any, index: number) => (
                 <div key={index} className="bg-white p-2 rounded border border-orange-200">
                   <div className="text-sm">
-                    <strong>Row {correction.rowIndex + 1}, Field "{correction.field}":</strong>
+                    <strong>Row {correction.rowIndex + 1}, Field &quot;{correction.field}&quot;:</strong>
                   </div>
                   <div className="text-sm text-gray-600">
                     Current: <code className="bg-gray-100 px-1 rounded">{JSON.stringify(correction.currentValue)}</code>

@@ -44,6 +44,8 @@ export default function AISearchBox({ data, entityType, onSearchResults }: AISea
     setLastExplanation('')
   }
 
+  const placeholderText = `Search ${entityType} with natural language (e.g., "tasks with duration more than 2 phases")`
+
   return (
     <div className="mb-4 p-4 bg-blue-50 rounded-lg border border-blue-200">
       <div className="flex gap-2 mb-2">
@@ -52,7 +54,7 @@ export default function AISearchBox({ data, entityType, onSearchResults }: AISea
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           onKeyPress={handleKeyPress}
-          placeholder={"Search ${entityType} with natural language (e.g., \"tasks with duration more than 2 phases\")"}
+          placeholder={placeholderText}
           className="flex-1 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           disabled={isSearching}
         />
@@ -87,7 +89,7 @@ export default function AISearchBox({ data, entityType, onSearchResults }: AISea
       )}
       
       <div className="text-xs text-gray-600 mt-1">
-        💡 Try queries like: "high priority clients", "workers with Python skills", "tasks requiring more than 3 phases"
+        💡 Try queries like: &quot;high priority clients&quot;, &quot;workers with Python skills&quot;, &quot;tasks requiring more than 3 phases&quot;
       </div>
     </div>
   )

@@ -5,7 +5,7 @@ import { parseFile } from '../lib/parseData'
 import { EntityType } from '@/types/entities'
 import HeaderMappingModal from './HeaderMappingModal'
 import { remapRows } from '../lib/remapData'
-import { SmartHeaderMapper } from '../lib/smartHeaderMapper'
+import { SmartHeaderMapper, ENTITY_SCHEMAS } from '../lib/smartHeaderMapper'
 
 interface Props {
     onDataParsed: (type: EntityType, data: any[]) => void
@@ -62,7 +62,7 @@ export default function FileUploader({ onDataParsed }: Props) {
             SmartHeaderMapper.mapHeaders(headers, 'tasks')
         ])
 
-        const entityTypes: (keyof typeof SmartHeaderMapper.ENTITY_SCHEMAS)[] = ['clients', 'workers', 'tasks']
+        const entityTypes: (keyof typeof ENTITY_SCHEMAS)[] = ['clients', 'workers', 'tasks']
         
         // Find the mapping with highest confidence
         let bestMatch = { confidence: 0, entityType: 'unknown' as EntityType, mapping: {} }

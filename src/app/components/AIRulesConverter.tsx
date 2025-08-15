@@ -51,6 +51,9 @@ export default function AIRulesConverter({ data, onRuleGenerated }: AIRulesConve
     }
   }
 
+  const placeholderText = `Describe a rule in plain English (e.g., "Tasks T001 and T002 should always run together" or "Workers in Sales group should have maximum 3 slots per phase")`
+
+
   return (
     <div className="mb-4 p-4 bg-green-50 rounded-lg border border-green-200">
       <h3 className="text-lg font-semibold mb-2 text-green-800">🤖 AI Rules Converter</h3>
@@ -60,7 +63,7 @@ export default function AIRulesConverter({ data, onRuleGenerated }: AIRulesConve
           value={naturalLanguage}
           onChange={(e) => setNaturalLanguage(e.target.value)}
           onKeyPress={handleKeyPress}
-          placeholder={`Describe a rule in plain English (e.g., "Tasks T001 and T002 should always run together" or "Workers in Sales group should have maximum 3 slots per phase")`}
+          placeholder={placeholderText}
           className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 resize-none"
           rows={3}
           disabled={isConverting}
@@ -110,7 +113,7 @@ export default function AIRulesConverter({ data, onRuleGenerated }: AIRulesConve
       )}
 
       <div className="text-xs text-gray-600 mt-2">
-        💡 Examples: "Tasks with ID T001 and T002 should run together", "Sales workers maximum 5 slots per phase", "Engineering group needs at least 3 common slots"
+        💡 Examples: &quot;Tasks with ID T001 and T002 should run together&quot;, &quot;Sales workers maximum 5 slots per phase&quot;, &quot;Engineering group needs at least 3 common slots&quot;
       </div>
     </div>
   )

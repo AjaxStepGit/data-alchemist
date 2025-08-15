@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import { AIService } from '../lib/aiService'
 
 interface AIRuleRecommendationsProps {
@@ -13,7 +13,7 @@ export default function AIRuleRecommendations({ data, onRuleGenerated }: AIRuleR
   const [isLoading, setIsLoading] = useState(false)
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null)
 
-  const loadRecommendations = async () => {
+  const loadRecommendations = useCallback(async () => {
     if (isLoading) return
 
     setIsLoading(true)
@@ -26,7 +26,7 @@ export default function AIRuleRecommendations({ data, onRuleGenerated }: AIRuleR
     } finally {
       setIsLoading(false)
     }
-  }
+  }, [data, isLoading])
 
   const handleAcceptRecommendation = async (recommendation: string) => {
     try {
